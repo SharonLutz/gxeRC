@@ -28,7 +28,6 @@ library(gxeRC)
 ?gxeRC # For details on this function
 
 gxeRC(n=5000)
-
 ```
 
 # Output
