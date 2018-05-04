@@ -1,0 +1,9 @@
+Package: gxeRC
+Type: Package
+Title: Power analyses for gene by environment interactions of both rare and common variants
+Version: 1.0
+Date: 2018-05-04
+Author: Sharon Lutz, Annie Thwing
+Maintainer: Annie Thwing <annie.thwing@ucdenver.edu>
+Description: Power analyses for gene by environment interactions of both rare and common variants
+License: GPL-2
