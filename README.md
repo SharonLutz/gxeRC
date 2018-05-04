@@ -9,16 +9,8 @@ devtools::install_github("SharonLutz/gxeRC")
 ```
 
 # Input
-n is the number of subjects \
-nSNP is the number of SNPS \
-MAF is the minor allele frequency for the SNPS \
-betaX is the genetic effect of each SNP \
-betaI is the effect of interaction for each SNP \
-zMu is the mean for the environmental effect \
-zVar is the variance for the environmental effect \
-yVar is the variance of the outcome Y \
-nSim is the number of simulations \
-alpha is the alpha level, default=0.05
+
+nSNP is the number of SNPs generated from a binomial distribution for n subjects (input n) for a given minor allele frequency (input vector MAF).
 
 # Example
 
@@ -31,7 +23,7 @@ gxeRC(n=5000)
 ```
 
 # Output
-For this example, we get the following matrix:
+For this example, we get the following matrix and corresponding plot:
 
 ```
       lmX1  lmX2  lmX3 lmAll
