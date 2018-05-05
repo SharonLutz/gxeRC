@@ -25,10 +25,15 @@ function(n=5000,nSNP=3,MAF=c(0.05,0.01,0.005),betaX=c(0.25,0.25,0.25),betaI=c(0,
   if(nSNP!=length(betaX)){stop("Error: nSNP must equal length(betaX).")}
   if(nSNP!=length(betaI)){stop("Error: nSNP must equal length(betaI).")}
   
-  # Check n, nSNP and nSim are integers greater than 0
-  if(length(n) > 1 | !(n>0)){stop("Error: n must be an integer greater than 0.")}
-  if(length(nSNP) > 1 | !(nSNP>0)){stop("Error: nSNP must be an integer greater than 0.")}
-  if(length(nSim) > 1 | !(nSim>0)){stop("Error: nSim must be an integer greater than 0.")}
+  # Check n, nSNP and nSim are integers
+  if(floor(n)!=ceiling(n)){stop("Error: n must be an integer.")}
+  if(floor(nSNP)!=ceiling(nSNP)){stop("Error: nSNP must be an integer.")}
+  if(floor(nSim)!=ceiling(nSim)){stop("Error: nSim must be an integer.")}
+  
+  # Check n, nSNP and nSim are greater than 0
+  if(!(n>0)){stop("Error: n must be greater than 0.")}
+  if(!(nSNP>0)){stop("Error: nSNP must be greater than 0.")}
+  if(!(nSim>0)){stop("Error: nSim must be greater than 0.")}
   
   # Check zVar > 0 and yVar > 0
   if(!(zVar>0)){stop("Error: zVar must be greater than 0.")}
