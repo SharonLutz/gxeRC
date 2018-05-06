@@ -34,7 +34,7 @@ For this example, we get the following matrix and corresponding plot:
 <img src="https://github.com/SharonLutz/gxeRC/blob/master/gxeRC.png" width="600">
 
 # References
-The power analysis used here is detailed in the following manuscript: <br/>
+The power analysis used here was implemented in the following manuscript: <br/>
 
 **Lutz SM**, Frederiksen B, Begum F, Cho MH, Hobbs B, McDonald ML, Parker
 MM, DeMeo DL, Jiang L, Eringher M, Young K, Foreman MG, Kinney GL,
