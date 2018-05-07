@@ -42,5 +42,3 @@ Make BJ, Lomas DA, Bakke P, Gulsvik A, Crapo JD, Silverman EK, Beaty
 TH, Hokanson JE. (2018) Common and Rare Variants Analysis of Smoking
 Related Traits Among Current and Former Smokers of European and
 African Ancestry.  (Submitted).
-
-
