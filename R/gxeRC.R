@@ -92,7 +92,7 @@ function(n=5000,nSNP=3,MAF=c(0.05,0.01,0.005),betaX=c(0.25,0.25,0.25),betaI=c(0,
         stop(errormessage)}
       
       # generate the environment Z
-      z<- rnorm(n,zMu,zVar) 
+      z<- rnorm(n,zMu,sqrt(zVar)) 
       zz<-matrix(0,nrow=n,ncol=1)
       zz[,1]<-z
       
@@ -100,7 +100,7 @@ function(n=5000,nSNP=3,MAF=c(0.05,0.01,0.005),betaX=c(0.25,0.25,0.25),betaI=c(0,
       mainEffects<- X%*%betaX
       intEffects<- (X%*%rep(betaIv,nSNP))*zz
       yMu<- mainEffects+ intEffects
-      y<-rnorm(n,yMu,yVar)
+      y<-rnorm(n,yMu,sqrt(yVar))
       
       ####################################
       # linear regression for interaction
