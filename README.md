@@ -9,7 +9,9 @@ devtools::install_github("SharonLutz/gxeRC")
 ```
 
 # Input
-nSNP is the number of SNPs generated from a binomial distribution for n subjects (input n) for a given minor allele frequency (input vector MAF).
+For n subjects, the number of SNPs inputted by the user (input: nSNP) are genereated from binomial distributions with minor allele frequency specified by the user (input: MAF). 
+
+E\[Y\] = &beta;<sub>o</sub> + &sum; &beta;<sub>X</sub> X<sub>i</sub> + &sum; &beta;<sub>I</sub>* X<sub>i</sub> * M + &beta;<sub>M</sub>* M + &beta;<sub>U</sub>* U 
 
 # Example
 
