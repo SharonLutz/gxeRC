@@ -9,7 +9,7 @@ devtools::install_github("SharonLutz/gxeRC")
 ```
 
 # Input
-For n subjects, the number of SNPs inputted by the user (input: nSNP) are genereated from binomial distributions with minor allele frequency specified by the user (input: MAF). 
+For n subjects, the number of SNPs X inputted by the user (input: nSNP) are genereated from binomial distributions with minor allele frequency specified by the user (input: MAF). The outcome Y is generated from a normal distribution with mean
 
 E\[Y\] = &beta;<sub>o</sub> + &sum; &beta;<sub>X</sub> X<sub>i</sub> + &sum; &beta;<sub>I</sub>* X<sub>i</sub> * M + &beta;<sub>M</sub>* M + &beta;<sub>U</sub>* U 
 
