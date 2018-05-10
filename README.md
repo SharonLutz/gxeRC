@@ -1,5 +1,5 @@
 # gxeRC
-Power analyses for gene by environment interactions of both rare and common variants.
+The gxeRC Rpackage computes power analyses for gene by environment interactions of both rare and common variants.
 
 # Installation
 ```
@@ -9,10 +9,16 @@ devtools::install_github("SharonLutz/gxeRC")
 ```
 
 # Input
-For n subjects, the number of SNPs X inputted by the user (input: nSNP) are genereated from binomial distributions with minor allele frequency specified by the user (input: MAF). The outcome Y is generated from a normal distribution with mean
+For n subjects, the number of SNPs X inputted by the user (input: nSNP) are genereated from binomial distributions with minor allele frequency specified by the user (input: MAF). The environmental factor Z is generated from a normal distribution with mean and variance inputted by the user. The outcome Y is generated from a normal distribution with mean as follows:
 
 E\[Y\] = &beta;<sub>o</sub> + &sum; &beta;<sub>X</sub> X<sub>i</sub> + &sum; &beta;<sub>I</sub>* X<sub>i</sub> * M + &beta;<sub>M</sub>* M + &beta;<sub>U</sub>* U 
 
+    mainEffects<- X%*%betaX
+      intEffects<- (X%*%rep(betaIv,nSNP))*zz
+      yMu<- mainEffects+ intEffects
+      y<-rnorm(n,yMu,sqrt(yVar))
+      
+      
 # Example
 
 
