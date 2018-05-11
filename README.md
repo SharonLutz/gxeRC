@@ -1,5 +1,5 @@
 # gxeRC
-The gxeRC Rpackage computes power analyses for gene by environment interactions of both rare and common variants.
+The gxeRC R package computes power analyses for gene by environment interactions of both rare and common variants.
 
 # Installation
 ```
