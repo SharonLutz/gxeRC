@@ -11,7 +11,7 @@ devtools::install_github("SharonLutz/gxeRC")
 # Input
 For n subjects, the number of SNPs X inputted by the user (input: nSNP) are genereated from binomial distributions with minor allele frequency specified by the user (input: MAF). The environmental factor Z is generated from a normal distribution with mean and variance inputted by the user. The outcome Y is generated from a normal distribution with mean as follows:
 
-E\[Y\] = &beta;<sub>o</sub> + &sum; &beta;<sub>X</sub> X<sub>i</sub> + &sum; &beta;<sub>I</sub>* X<sub>i</sub> * M + &beta;<sub>M</sub>* M + &beta;<sub>U</sub>* U 
+E\[Y\] = &beta;<sub>o</sub> + &sum;<sub>i</sub>  &beta;<sub>X</sub> X<sub>i</sub> + &sum; &beta;<sub>I</sub>* X<sub>i</sub> * M + &beta;<sub>M</sub>* M + &beta;<sub>U</sub>* U 
 
     mainEffects<- X%*%betaX
       intEffects<- (X%*%rep(betaIv,nSNP))*zz
