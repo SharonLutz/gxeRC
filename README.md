@@ -14,7 +14,8 @@ For n subjects, the number of SNPs X inputted by the user (input: nSNP) are gene
 E\[Y\] = &beta;<sub>0</sub> + &beta;<sub>z</sub> Z + &sum;<sub>j</sub>  &beta;<sub>x</sub> X<sub>j</sub> + &sum;<sub>j</sub> &beta;<sub>I</sub> X<sub>j</sub>  Z  
 
 for j=1,...,k where k= the number of SNPs.    
-      
+
+See the manpage for more detail regarding the input of the 
 # Example
 
 ```
