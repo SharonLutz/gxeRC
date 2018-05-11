@@ -32,7 +32,7 @@ betaI = c(0, 0.05, 0.1),zMu = 0, zVar = 1, yVar = 1, nSim = 1000, alpha = 0.05)
 ```
 
 # Output
-For this example, we get the following matrix and corresponding plot:
+For this example, we get the following matrix and corresponding plot . We can see from the 
 
 ```
       lmX1  lmX2  lmX3 lmAll
