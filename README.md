@@ -21,7 +21,8 @@ for j=1,...,k where k= the number of SNPs.
 library(gxeRC)
 ?gxeRC # For details on this function
 
-gxeRC(n=5000)
+gxeRC(n = 5000, nSNP = 3, MAF = c(0.05, 0.01, 0.005), betaX = c(0.25, 0.25, 0.25), betaI = c(0, 0.05, 0.1),
+zMu = 0, zVar = 1, yVar = 1, nSim = 1000, alpha = 0.05, plot.name = "gxeRC.pdf")
 ```
 
 # Output
