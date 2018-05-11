@@ -15,13 +15,18 @@ E\[Y\] = &beta;<sub>0</sub> + &beta;<sub>z</sub> Z + &sum;<sub>j</sub>  &beta;<s
 
 for j=1,...,k where k= the number of SNPs.    
 
-See the manpage for more detail regarding the input of the 
-# Example
+See the manpage for more detail regarding the input of the gxeRC function.
 
 ```
 library(gxeRC)
 ?gxeRC # For details on this function
+```
 
+# Example
+For 5,000 subjects, 3 SNPs X with MAF of 0.05, 0.01, and 0.005, respectively, and a normally distributed environmental factor Z, we genereated the power for the SNP by environment interaction on the outcome Y for each SNP independently and for the joint interaction using the following commands.
+
+```
+library(gxeRC)
 gxeRC(n = 5000, nSNP = 3, MAF = c(0.05, 0.01, 0.005), betaX = c(0.25, 0.25, 0.25), 
 betaI = c(0, 0.05, 0.1),zMu = 0, zVar = 1, yVar = 1, nSim = 1000, alpha = 0.05)
 ```
