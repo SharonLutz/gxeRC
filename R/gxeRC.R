@@ -23,7 +23,7 @@ function(n=5000,nSNP=3,MAF=c(0.05,0.01,0.005),betaX=c(0.25,0.25,0.25),betaI=c(0,
   # Check nSNP = length(MAF)==length(betaX)==length(betaI)
   if(nSNP!=length(MAF)){stop("Error: nSNP must equal length(MAF).")}
   if(nSNP!=length(betaX)){stop("Error: nSNP must equal length(betaX).")}
-  if(nSNP!=length(betaI)){stop("Error: nSNP must equal length(betaI).")}
+  if(length(betaI)<2){stop("Error: length(betaI) must be 2 or greater.")}
   
   # Check n, nSNP and nSim are integers
   if(floor(n)!=ceiling(n)){stop("Error: n must be an integer.")}
