@@ -45,5 +45,5 @@ For this example, we get the following matrix and corresponding plot which outpu
 ## References
 The power analysis used here was implemented in the following manuscript: <br/>
 
-**Lutz SM**, Frederiksen B, Begum F, Cho MH, Hobbs B, McDonald ML, Parker MM, DeMeo DL, Jiang L, Eringher M, Young K, Foreman MG, Kinney GL, Make BJ, Lomas DA, Bakke P, Gulsvik A, Crapo JD, Silverman EK, Beaty TH, Hokanson JE. (2018) Common and Rare Variants Genetic Association Analysis of Cigarettes Per Day Among Ever Smokers in COPD Cases and Controls. *NTR*. (In Press)
+**Lutz SM**, Frederiksen B, Begum F, Cho MH, Hobbs B, McDonald ML, Parker MM, DeMeo DL, Jiang L, Eringher M, Young K, Foreman MG, Kinney GL, Make BJ, Lomas DA, Bakke P, Gulsvik A, Crapo JD, Silverman EK, Beaty TH, Hokanson JE. (2019) Common and Rare Variants Genetic Association Analysis of Cigarettes Per Day Among Ever Smokers in COPD Cases and Controls. *NTR*. 21(6):714-722.
 
