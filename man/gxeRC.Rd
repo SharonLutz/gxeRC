@@ -3,7 +3,7 @@
 \title{gxeRC
 }
 \description{
-A function to run a power analysis for gene by environment interactions of both rare and common variants.
+A function to  examine gene by environment interactions of both rare and common variants.
 }
 \usage{
 gxeRC(n = 5000, nSNP = 3, MAF = c(0.05, 0.01, 0.005), betaX = c(0.25, 0.25, 0.25), betaI = c(0, 0.05, 0.1), 
@@ -49,7 +49,7 @@ is the name of the corresponding plot
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-a matrix of the power of each SNP, and all SNPs together
+a matrix of the proportion of simulations the null hypothesis was rejected for each SNP, and all SNPs together
 }
 \references{
 Lutz SM, Frederiksen B, Begum F, Cho MH, Hobbs B, McDonald ML, Parker
